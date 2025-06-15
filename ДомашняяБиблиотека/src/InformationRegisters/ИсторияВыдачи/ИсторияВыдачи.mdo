@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="437e88d3-d26f-4d01-a684-2a2f45644aac">
+  <producedTypes>
+    <selectionType typeId="c0c3c0b6-9d08-430b-9031-75fdcedb8873" valueTypeId="df2aefb8-fa9d-4991-9eca-a2d6f1869991"/>
+    <listType typeId="67856b2d-23c8-4ec1-8064-5fe557c99000" valueTypeId="5cb577a1-770d-4290-ac80-ffc49023458b"/>
+    <managerType typeId="0884d1c1-4064-4dc7-91d3-0477a827442c" valueTypeId="ea691cfd-9546-4ab1-b8ff-2f35b4238927"/>
+    <recordSetType typeId="1592cb80-168b-4ec5-90a8-da751d43a516" valueTypeId="45d2ee10-d5f4-4b36-8145-aba97976780d"/>
+    <recordKeyType typeId="99428e50-2c13-4bad-ac52-3304ced7790f" valueTypeId="d387e6f4-9d26-47d6-b83b-c37d55b0dedf"/>
+    <recordType typeId="4c741ee7-6048-4ef6-99b7-8a29c301899b" valueTypeId="db8b0944-550a-446a-9009-8aaeddf990e2"/>
+    <recordManagerType typeId="c193c960-aec4-4a5c-a312-ebd25a177579" valueTypeId="5ca232fc-f423-4c63-b52c-711c304ee239"/>
+  </producedTypes>
+  <name>ИсторияВыдачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>История выдачи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a01b00e6-5d1b-4424-bbd0-f503c5aa1b8e">
+    <name>ДатаВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выдачи</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="cf9c2834-d1e4-4a41-9ee5-0bb013ca533e">
+    <name>СрокВозврата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок возврата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="52f00cc9-7fce-4777-9468-51b01dd4396e">
+    <name>Книга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Книга</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Книги</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="de868bb7-3ef4-48f4-bd3a-5219ffb4eec5">
+    <name>Друг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Друг</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Друзья</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

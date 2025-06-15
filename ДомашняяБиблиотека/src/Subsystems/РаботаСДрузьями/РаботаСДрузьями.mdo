@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="db392ebb-3940-4645-9d0c-191be4b9bd74">
+  <name>РаботаСДрузьями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с друзьями</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Друзья</content>
+  <content>Document.ВозвратКниг</content>
+  <content>Document.ВыдачаКниг</content>
+  <content>AccumulationRegister.ОстаткиКниг</content>
+  <content>DataProcessor.ПоискКниги</content>
+  <content>InformationRegister.ИсторияВыдачи</content>
+</mdclass:Subsystem>

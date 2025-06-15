@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3619be48-92ac-4956-a976-2d85e746427d">
+  <producedTypes>
+    <selectionType typeId="98dea31a-ce09-4ad0-b2a8-eadc49237b20" valueTypeId="725e99d7-4326-47bd-96c9-a35162aa99c9"/>
+    <listType typeId="9beafe79-fc63-467b-9ecd-599dc1290b0e" valueTypeId="91c1e2e2-c945-4c37-91ab-0e6a1fcc6b05"/>
+    <managerType typeId="602b28a6-7c11-442d-a894-4c545ca1e049" valueTypeId="a9a118f8-a809-407c-a208-03f01a7717d1"/>
+    <recordSetType typeId="ebee2279-36aa-48fe-9811-ebf83cf388c0" valueTypeId="48bc5dbb-f421-447c-a327-029dc76ec62a"/>
+    <recordKeyType typeId="b0986f6b-ac76-4888-a85a-f336c65bf640" valueTypeId="be93c4ba-b631-4d82-9d87-9f5a6e5ba43b"/>
+    <recordType typeId="4ef25b00-c29e-4d3f-ad9a-99138f3cc072" valueTypeId="c5487afd-2ecc-42b9-bf3d-c9b12dc9508c"/>
+  </producedTypes>
+  <name>ОстаткиКниг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки книг</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Движения по регистру Остатки книг</value>
+  </extendedListPresentation>
+  <resources uuid="e144fd89-6089-43fd-98c5-6d2c7be71eb3">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="7b96179c-c1ab-48ab-b4b9-000ee6e9a9f6">
+    <name>Книга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Книга</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Книги</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

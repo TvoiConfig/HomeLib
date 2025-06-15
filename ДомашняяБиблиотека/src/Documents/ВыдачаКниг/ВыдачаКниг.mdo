@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1f80699b-ae50-460a-899f-a6f0ea8881ac">
+  <producedTypes>
+    <objectType typeId="05bd2f40-00d6-4751-bf00-9cf0c4a108d0" valueTypeId="5e22f564-2188-44eb-bf4d-0e383f0c065d"/>
+    <refType typeId="be67efcc-82e1-411f-91b0-3ee82498d3ee" valueTypeId="8f9b9be5-81c1-4e1a-a85d-fc85603ca110"/>
+    <selectionType typeId="e373175f-228c-4a5b-b43c-0898f4702f73" valueTypeId="117d809e-02fa-4c9f-b8cb-5a1c9871e46b"/>
+    <listType typeId="0b09e5e9-cc8a-4d36-9ba7-17d69cf86654" valueTypeId="c6a7a83e-fa76-42b1-97a7-943382eb07f9"/>
+    <managerType typeId="9f1e322f-5c9e-48ab-85f2-314fb1b9a425" valueTypeId="76d369be-9bc9-4f93-ac1e-b98f445d31c7"/>
+  </producedTypes>
+  <name>ВыдачаКниг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выдача книг</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВыдачаКниг.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Выдачи книг</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВыдачаКниг.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.ОстаткиКниг</registerRecords>
+  <registerRecords>InformationRegister.ИсторияВыдачи</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="731db207-ad2a-4b80-b47e-ec3153316e49">
+    <name>Друг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Друг</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Друзья</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <quickChoice>Use</quickChoice>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="2c677d23-e816-485b-91c9-1aa0498512f5">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="14b3bb19-c95e-4dad-84a5-a4000576c478">
+    <producedTypes>
+      <objectType typeId="0748f703-e67f-4780-9169-e07ae80c7697" valueTypeId="e33b82ef-03dd-4cbc-92d2-7205ccce3e34"/>
+      <rowType typeId="416b0f57-335a-4f24-a3cb-170070954c31" valueTypeId="a1274e84-f582-4997-b4d9-a6d4066d6033"/>
+    </producedTypes>
+    <name>Книги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Книги</value>
+    </synonym>
+    <attributes uuid="06d0136a-7459-4b40-a3bf-cdfa62c7241b">
+      <name>Книга</name>
+      <synonym>
+        <key>ru</key>
+        <value>Книга</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Книги</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d1eef451-7d4f-4772-bce3-edc5a4dc6823">
+      <name>СрокВозврата</name>
+      <synonym>
+        <key>ru</key>
+        <value>Срок возврата</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="29df27a1-0a6a-4d7a-a545-9c7626fbbbcd">
+  <producedTypes>
+    <objectType typeId="0c2be182-cab2-4ed4-a94e-da824514c6a3" valueTypeId="69c09d68-58ba-48a6-84b3-60a580b6c9e4"/>
+    <managerType typeId="b0ddd14f-233c-444f-b674-5f22920d96e1" valueTypeId="4d1f2722-ef45-488d-9775-259b56888e23"/>
+  </producedTypes>
+  <name>КнигиВНаличии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Книги в наличии</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.КнигиВНаличии.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="9bcc239f-dd78-479d-bfed-538a0fa5e5bb">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>
